@@ -7,7 +7,6 @@ const _repo = new OrderRepository();
 
 const router = express.Router();
 
-
 const buildAsyncResponse =
 	asyncMethod =>
 		(req, res) =>
