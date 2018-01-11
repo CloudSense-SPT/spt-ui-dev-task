@@ -6,7 +6,7 @@ SPT - UI Dev Task
 
 This file documents an exercise meant to test a UI developer candidate for a position on the CloudSense Sales Production Team. 
 
-#### The Task
+#### Summary
 
 The task is to create a functional mock-up of the following design using any combination\* of frontend technologies in order to fetch and render data from the provided server.
 
@@ -45,7 +45,7 @@ Creates/updates order from json from request body.
 
 Build an app (preferably single page) that will load data from the server and render it as per the [design reference](/assets/design_reference.jpg). The mock-up should replicate the visuals of the design reference as closely as possible, and feature any functionality that you may be able to infer from it.
 
-Your choice of technologies / solutions will not factor into any evaluation of your work, and you are free to use anything you like except jQuery\*. We recommend using whatever you're most comfortable with, as it is the quality of you work and not your choice of solution that we will be reviewing.
+Your choice of technologies / solutions will not factor into any evaluation of your work, and you are free to use anything you like except jQuery\*. We recommend using whatever you're most comfortable with, as it is the quality of your work and not your choice of solution that we will be reviewing.
 
 #### Structure and Layout Overview
 
@@ -55,7 +55,7 @@ The header includes the CloudSense logo, a search bar, and an account widget. Th
 
 The Orders component is composed of individual Order entries, each of which features a collapsed summary view, and an expanded content view. 
 
-The collapsed view lists data relating to the order, a minimal milestone tracker, and a button link. The minimal milestone tracker includes on-hover tooltips (not featured). 
+The collapsed view lists data relating to the order, a minimal milestone tracker, and a button link. The minimal milestone tracker displays in-progress, completed, and alert states, as well as on-hover tooltips (not featured). 
 
 The expanded view includes a full-size milestone-tracker, and a formatted table of related suborders. Each suborder entry lists its data and includes a button link.
 
@@ -63,41 +63,18 @@ The expanded view includes a full-size milestone-tracker, and a formatted table 
 
 All of the above objects should be rendered as interactive mock-ups using data parsed from the provided backend model using the provided REST API.
 
-When building the milestone viewer(s), keep in mind that the current step is only determined as being preceded by a step that includes `status == "Completed"` in the provided data, meaning 
+When building the milestone viewer(s), keep in mind that the current step is defined as the first non-complete step preceded by a step that includes `status: "Complete"` in the provided data. In the absence of such a step, the first step is considered the current step.
 
 #### Notes
 
-If you have any questions regarding the requirements, feel free to contact us via email, although some aspects are purposely left up to you. As such feel free to develop any additional functionality you deem relevant.  
+Should you have any questions regarding the requirements, feel free to contact us via email, although some aspects are purposely left up to you. If you would like to do a little more to show us something you particularly excel at, consider also doing some of the following:
 
-Any additional features you chose to develop should either expand the presented functionality within the assumed scope, or facilitate functionality that might typically be found in a similar context, whether on the frontend or backend.
+- Implement the aforementioned UI elements that aren't featured in the design reference
+- Implement pagination for the Order component
+- Address basic responsive considerations
 
-Keep in mind that while we encourage creativity and developing additional features, you should focus on completing the base requirements first, and then showing us where you excel. Try not to stray too far outside of the proposed scope though.
+Please note that doing any or all of the above does not automatically give you an advantage over someone who just completes the stated requirements well.
 
-#### Deliverable
-When you have completed your project, please email it to us along with any relevant notes or instructions that you might have.
+### Submitting Your Project
 
-
-
-
-
-
- 
-#### Bonus (not mandatory)
-You can do one (or many) of the following to get bonus points:
-* Introduce error preview for processes with steps in error (must modify mock data)
-* Introduce navigation to order detail (with component) displaying that order specific data
-* Introduce persistence on backend (instead of in-memory DB introduce remote database)
-* Order paging (on frontend, maybe even on backend)
-* Maybe something you thing it would be nice
-
-If you do not do anything from given list, you can still win over someone who has done all of aformentioned.
-
-#### On Order component
-
-
-When building cell and milestone version of process component follow these rules:
-* Displaying entities are process steps ordered by sequence.
-* Process is in step after last one with `status == "Completed"`
-  + If there is no such step, first one is current
-    + Except when all steps are completed 
-
+When you have completed your project, please email it to us along with any relevant notes or instructions that you feel are necessary.
