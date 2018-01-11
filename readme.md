@@ -26,7 +26,7 @@ The Orders list is composed of individual Order entries, each of which features 
 
 The collapsed view lists data relating to the order, a minimal milestone tracker, and a button link. The expanded view includes a full-size milestone-tracker, and a formatted table of related suborders. Each suborder entry features its data and a button link.
 
-All of the date fields for the above objects can be accesses via the provided backend model.
+All of the data fields for the above objects can be accesses via the provided backend model.
 
 ### Installation and Usage
 
