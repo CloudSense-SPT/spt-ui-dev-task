@@ -45,7 +45,8 @@ Creates/updates order from json from request body.
 
 Build an app (preferably single page) that will load data from the server and render it as per the [design reference](/assets/design_reference.jpg). The mock-up should replicate the visuals of the design reference as closely as possible, and feature any functionality that you may be able to infer from it.
 
-Your choice of technologies / solutions will not factor into any evaluation of your work, and you are free to use anything you like except jQuery\*. We recommend using whatever you're most comfortable with, as it is the quality of your work and not your choice of solution that we will be reviewing.
+Your choice of technologies / solutions will not factor into any evaluation of your work, and you are free to use anything you like, with the exception of things like jQuery and CSS libraries\*.
+We recommend using whatever you're most comfortable with, as it is the quality of your work and not your choice of solution that we will be reviewing.
 
 #### Structure and Layout Overview
 
